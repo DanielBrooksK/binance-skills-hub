@@ -1,8 +1,10 @@
 # Binance Skills Hub
 
-This repository contains Binance’s implementation of skills for interacting with Binance APIs.
+Binance Skills Hub is an open skills marketplace that gives AI agents native access to crypto: both centralized and decentralized. Search tokens, execute trades, track wallets, monitor signals, and interact with DeFi protocols, all through natural language.
 
-Skills are self-contained folders of instructions and metadata that standardize how specific Binance API workflows are executed. Each skill focuses on a defined set of endpoints or use cases.
+Built by Binance. Built for everyone.
+
+We're not building this just for Binance products. Skills Hub is designed for the entire crypto ecosystem: any agent, any framework, any chain. Whether you're building on LangChain, CrewAI, or your own stack, your agents can plug into crypto with a few lines of config.
 
 ---
 
@@ -23,7 +25,7 @@ To add a new skill:
 1. **Fork the repository** and create a new branch:
 
    ```bash
-   git checkout -b feature/binance-<skill-name>
+   git checkout -b feature/<skill-name>
    ```
 
 2. **Create a new folder** containing a `SKILL.md` file.
@@ -32,24 +34,18 @@ To add a new skill:
 
    ```markdown
    ---
-   title: Binance <Skill Name>
+   title: <Skill Name>
    description: A clear description of what the skill does and when to use it.
    metadata:
      - version: <Skill Version>
-     - author: Binance
+     - author: <Your Github Username>
    license: MIT
    ---
 
-   # Binance <Skill Name>
+   # <Skill Name>
 
    [Add instructions, examples, and guidelines here]
    ```
 
 4. **Open a Pull Request** to `main` for review.
    Once approved, the skill will be merged.
-
----
-
-## Available Skills
-
-* [Binance Spot](./skills/binance-spot/SKILL.md) – Skill for Spot API endpoints.
