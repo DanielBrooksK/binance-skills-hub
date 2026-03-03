@@ -34,7 +34,7 @@ https://web3.binance.com/bapi/defi/v3/public/wallet-direct/buw/wallet/address/pn
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| address | string | Yes | Wallet address, e.g., `0x02e9b4708d41ca10632918edd9e94e21edd82ed1` |
+| address | string | Yes | Wallet address, e.g., `0x0000000000000000000000000000000000000001` |
 | chainId | string | Yes | Chain ID, e.g., `56` (BSC), `1` (ETH), `8453` (Base) |
 | offset | number | No | Pagination offset, default 0 |
 
@@ -47,7 +47,7 @@ Accept-Encoding: identity
 
 **Example Request**:
 ```bash
-curl --location 'https://web3.binance.com/bapi/defi/v3/public/wallet-direct/buw/wallet/address/pnl/active-position-list?address=0x02e9b4708d41ca10632918edd9e94e21edd82ed1&chainId=56&offset=0' \
+curl --location 'https://web3.binance.com/bapi/defi/v3/public/wallet-direct/buw/wallet/address/pnl/active-position-list?address=0x0000000000000000000000000000000000000001&chainId=56&offset=0' \
 --header 'clienttype: web' \
 --header 'clientversion: 1.2.0' \
 --header 'Accept-Encoding: identity'
@@ -65,11 +65,11 @@ curl --location 'https://web3.binance.com/bapi/defi/v3/public/wallet-direct/buw/
         "list": [
             {
                 "chainId": "56",
-                "address": "0x02e9b4708d41ca10632918edd9e94e21edd82ed1",
-                "contractAddress": "0xe97b7ba92e5058d0456894ff6f969683cfd44444",
-                "name": "The Giraffes",
-                "symbol": "GIRAFFES",
-                "icon": "/images/web3-data/public/token/logos/A0B22474BF610AE1646962D05D2BE933.png",
+                "address": "0x0000000000000000000000000000000000000001",
+                "contractAddress": "token contract address",
+                "name": "name of token",
+                "symbol": "symbol of token",
+                "icon": "/images/web3-data/public/token/logos/xxxx.png",
                 "decimals": 18,
                 "price": "0.0000045375251839978",
                 "percentChange24h": "6.84",

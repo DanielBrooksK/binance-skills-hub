@@ -61,7 +61,7 @@ Accept-Encoding: identity
 
 **Example Request**:
 ```bash
-curl --location 'https://web3.binance.com/bapi/defi/v5/public/wallet-direct/buw/wallet/market/token/search?keyword=koge&chainIds=56,8453,CT_501&orderBy=volume24h' \
+curl --location 'https://web3.binance.com/bapi/defi/v5/public/wallet-direct/buw/wallet/market/token/search?keyword=xxx&chainIds=56,8453,CT_501&orderBy=volume24h' \
 --header 'Accept-Encoding: identity'
 ```
 
@@ -72,11 +72,11 @@ curl --location 'https://web3.binance.com/bapi/defi/v5/public/wallet-direct/buw/
     "data": [
         {
             "chainId": "56",
-            "contractAddress": "0xe6df05ce8c8301223373cf5b969afcb1498c5528",
-            "tokenId": "CC1F457B32142B93198987B7FC893B26",
-            "name": "48 Club Token",
-            "symbol": "KOGE",
-            "icon": "/images/web3-data/public/token/logos/CC1F457B32142B93198987B7FC893B26.png",
+            "contractAddress": "0x1234...",
+            "tokenId": "CC1F457...",
+            "name": "Token",
+            "symbol": "symbol of token",
+            "icon": "/images/web3-data/public/token/logos/xxx.png",
             "price": "47.98771375939603199404",
             "percentChange24h": "-0.01",
             "volume24h": "53687246.955803546359104902201",
@@ -88,8 +88,8 @@ curl --location 'https://web3.binance.com/bapi/defi/v5/public/wallet-direct/buw/
                 "Community Recognition Level": [{"tagName": "Alpha", "languageKey": "wmp-label-title-alpha"}]
             },
             "links": [
-                {"label": "website", "link": "https://www.48.club/"},
-                {"label": "x", "link": "https://twitter.com/48Club_Official"}
+                {"label": "website", "link": "https://www.web.site/"},
+                {"label": "x", "link": "https://twitter.com/..."}
             ],
             "createTime": 1600611727000,
             "holdersTop10Percent": "93.267178480644823",
@@ -145,7 +145,7 @@ Accept-Encoding: identity
 
 **Example Request**:
 ```bash
-curl --location 'https://web3.binance.com/bapi/defi/v1/public/wallet-direct/buw/wallet/dex/market/token/meta/info?chainId=56&contractAddress=0xe6df05ce8c8301223373cf5b969afcb1498c5528' \
+curl --location 'https://web3.binance.com/bapi/defi/v1/public/wallet-direct/buw/wallet/dex/market/token/meta/info?chainId=56&contractAddress=0x55d398326f99059ff775485246999027b3197955' \
 --header 'Accept-Encoding: identity'
 ```
 
@@ -154,34 +154,34 @@ curl --location 'https://web3.binance.com/bapi/defi/v1/public/wallet-direct/buw/
 {
     "code": "000000",
     "data": {
-        "tokenId": "CC1F457B32142B93198987B7FC893B26",
-        "name": "48 Club Token",
-        "symbol": "KOGE",
+        "tokenId": "CC1F457B",
+        "name": "name of Token",
+        "symbol": "symbol of token",
         "chainId": "56",
         "chainIconUrl": "https://bin.bnbstatic.com/image/admin_mgs_image_upload/20250228/d0216ce4-a3e9-4bda-8937-4a6aa943ccf2.png",
         "chainName": "BSC",
-        "contractAddress": "0xe6df05ce8c8301223373cf5b969afcb1498c5528",
+        "contractAddress": "0x55d398326f99059ff775485246999027b3197955",
         "decimals": 18,
-        "icon": "/images/web3-data/public/token/logos/CC1F457B32142B93198987B7FC893B26.png",
+        "icon": "/images/web3-data/public/token/logos/xxx.png",
         "nativeAddressFlag": false,
         "aiNarrativeFlag": 1,
         "links": [
-            {"label": "website", "link": "https://www.48.club/"},
+            {"label": "website", "link": "https://www.web.site/"},
             {"label": "whitepaper", "link": "https://drive.google.com/file/d/..."},
-            {"label": "x", "link": "https://twitter.com/48Club_Official"}
+            {"label": "x", "link": "https://twitter.com/..."}
         ],
         "previewLink": {
-            "website": ["https://www.48.club/"],
-            "x": ["https://twitter.com/48Club_Official"],
+            "website": ["https://www.web.site/"],
+            "x": ["https://twitter.com/..."],
             "tg": []
         },
         "createTime": 1600611727000,
-        "creatorAddress": "0xa044d502c7e23840dcd5997fb3ba85a6de5763e4",
+        "creatorAddress": "0x1234...",
         "auditInfo": {
             "isBlacklist": false,
             "isWhitelist": true
         },
-        "description": "48 Club Token (KOGE) is a cryptocurrency and operates on the BNB Smart Chain..."
+        "description": "this is a good token..."
     },
     "success": true
 }
@@ -229,7 +229,7 @@ Accept-Encoding: identity
 
 **Example Request**:
 ```bash
-curl --location 'https://web3.binance.com/bapi/defi/v4/public/wallet-direct/buw/wallet/market/token/dynamic/info?chainId=56&contractAddress=0xe6df05ce8c8301223373cf5b969afcb1498c5528' \
+curl --location 'https://web3.binance.com/bapi/defi/v4/public/wallet-direct/buw/wallet/market/token/dynamic/info?chainId=56&contractAddress=0x55d398326f99059ff775485246999027b3197955' \
 --header 'Accept-Encoding: identity'
 ```
 
@@ -391,7 +391,7 @@ Accept-Encoding: identity
 
 **Example Request**:
 ```bash
-curl --location 'https://dquery.sintral.io/u-kline/v1/k-line/candles?address=0x9eadbe35f3ee3bf3e28180070c429298a1b02f93&interval=1min&limit=500&platform=base&to=1772126280000' \
+curl --location 'https://dquery.sintral.io/u-kline/v1/k-line/candles?address=0x55d398326f99059ff775485246999027b3197955&interval=1min&limit=500&platform=bsc&to=1772126280000' \
 --header 'Accept-Encoding: identity'
 ```
 

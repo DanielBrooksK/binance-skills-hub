@@ -66,7 +66,7 @@ curl --location 'https://web3.binance.com/bapi/defi/v1/public/wallet-direct/secu
 --header 'Accept-Encoding: identity' \
 --data '{
     "binanceChainId": "56",
-    "contractAddress": "0xe6df05ce8c8301223373cf5b969afcb1498c5528",
+    "contractAddress": "0x55d398326f99059ff775485246999027b3197955",
     "requestId": "'$(uuidgen)'"
 }'
 ```

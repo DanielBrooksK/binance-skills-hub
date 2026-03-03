@@ -73,10 +73,10 @@ curl --location 'https://web3.binance.com/bapi/defi/v1/public/wallet-direct/buw/
     "data": [
         {
             "signalId": 22179,
-            "ticker": "Punch",
+            "ticker": "symbol of the token",
             "chainId": "CT_501",
-            "contractAddress": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
-            "logoUrl": "/images/web3-data/public/token/logos/825C62EC6BE606406017F26ABCAEBAD2.png",
+            "contractAddress": "NV...pump",
+            "logoUrl": "/images/web3-data/public/token/logos/825C62EC6BE6.png",
             "chainLogoUrl": "https://bin.bnbstatic.com/image/admin_mgs_image_upload/20250303/42065e0a-3808-400e-b589-61c2dbfc0eac.png",
             "tokenDecimals": 6,
             "isAlpha": false,
